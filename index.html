@@ -4,101 +4,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Saurav Jha</title>
+    <title>Collaboration Form</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
             background-color: #f4f4f4;
-            margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-        }
-
-        .card-panel {
-            max-width: 600px;
-            width: 100%;
-            border-radius: 10px;
-            padding: 20px;
-            background-color: #424242;
-            color: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .material-icons {
-            font-size: 1.5rem;
-            vertical-align: middle;
-            margin-right: 5px;
-        }
-
-        h4 {
-            margin: 0 0 10px 0;
-        }
-
-        .location {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-
-        .location i {
-            font-size: 1.8rem;
-            margin-right: 10px;
-        }
-
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            list-style: none;
-            padding: 0;
             margin: 0;
         }
 
-        .skills li {
-            background-color: #757575;
-            color: white;
-            border-radius: 5px;
-            padding: 5px 10px;
-            margin: 5px;
+        .form-container {
+            max-width: 600px;
+            width: 100%;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h4 {
+            margin-top: 0;
+        }
+
+        .input-field {
+            margin-bottom: 20px;
+        }
+
+        .input-field input[type="text"],
+        .input-field input[type="email"],
+        .input-field textarea {
+            border: none;
+            border-bottom: 1px solid #9e9e9e;
+            outline: none;
             font-size: 1em;
         }
 
-        .highlight {
-            color: #00e676;
+        .input-field label {
+            color: #9e9e9e;
+        }
+
+        .btn {
+            background-color: #00e676;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            padding: 10px 20px;
+            cursor: pointer;
         }
     </style>
 </head>
 
 <body>
-    <div class="card-panel">
-        <h4><i class="material-icons">person</i>Saurav Jha</h4>
-        <div class="location">
-            <i class="material-icons">location_on</i>Faridabad, Haryana
-        </div>
-        <h5>Full Stack Developer</h5>
-        <ul class="skills">
-            <li>Node.js</li>
-            <li>Angular</li>
-            <li>Express</li>
-            <li>MongoDB</li>
-            <li>MySQL</li>
-            <li>AWS Lambda</li>
-            <li>AWS SQS</li>
-            <li>RxJS</li>
-            <li>NGRX</li>
-            <li>AWS SNS</li>
-            <li>AWS S3</li>
-            <li>Redis</li>
-        </ul>
-        <p>Passionate about building modern web applications and leveraging cloud technologies to deliver
-            high-performance solutions.</p>
+    <div class="form-container">
+        <h4><i class="material-icons">emoji_people</i>Let's Collab</h4>
+        <form>
+            <div class="input-field">
+                <input type="text" id="name" required>
+                <label for="name">Name</label>
+            </div>
+            <div class="input-field">
+                <input type="email" id="email" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-field">
+                <input type="text" id="subject" required>
+                <label for="subject">Subject</label>
+            </div>
+            <div class="input-field">
+                <textarea id="description" class="materialize-textarea" required></textarea>
+                <label for="description">Description</label>
+            </div>
+            <button type="submit" class="btn"><i class="material-icons left">send</i>Send</button>
+        </form>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
-
 
 </html>
