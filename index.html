@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shall We Collab? 😎</title>
+    <title>shall we? 😎</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -75,29 +75,38 @@
 
 <body>
     <div class="form-container">
-        <h4>👋 Hi! Let's Collab 🤝</h4>
+        <h4>👋 hi! let's collab 🤝</h4>
         <form>
             <div class="input-field">
-                <input type="text" id="name" required>
-                <label for="name">Name</label>
+                <input type="text" id="name" required maxlength="30">
+                <label for="name">name</label>
             </div>
             <div class="input-field">
-                <input type="email" id="email" required>
-                <label for="email">Email</label>
+                <input type="email" id="email" required maxlength="30">
+                <label for="email">email</label>
             </div>
             <div class="input-field">
-                <input type="text" id="subject" required>
-                <label for="subject">Subject</label>
+                <input type="text" id="subject" required maxlength="30">
+                <label for="subject">subject</label>
             </div>
             <div class="input-field">
-                <textarea id="description" class="materialize-textarea" required></textarea>
-                <label for="description">Description</label>
+                <textarea id="description" class="materialize-textarea" required maxlength="1000"></textarea>
+                <label for="description">description</label>
             </div>
-            <button type="submit" class="btn"><i class="material-icons left">send</i>Send</button>
+            <button type="submit" class="btn"><i class="material-icons left">send</i>send</button>
         </form>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>const styles = `
+        background: #00e676;
+        color: black;
+        padding: 5px;
+        border-radius: 3px;
+      `;
+
+        // Apply styles to console.log statements
+        console.log(`%cacha i see where you're coming from! 😏😏`, styles);</script>
 </body>
 
 </html>
