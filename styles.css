@@ -1,0 +1,61 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-container h4 {
+    margin-top: 0;
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+}
+
+.form-container p {
+    font-size: 1.2rem;
+}
+
+.input-field {
+    margin-bottom: 20px;
+}
+
+.input-field input[type="text"],
+.input-field input[type="email"],
+.input-field textarea {
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    outline: none;
+    font-size: 1em;
+}
+
+.input-field label {
+    color: #9e9e9e;
+}
+
+.btn {
+    background-color: #00e676;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.btn i {
+    margin-right: 5px;
+}
